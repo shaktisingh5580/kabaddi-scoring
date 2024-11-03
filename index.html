@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Dominating Boys</title>
+    <title>Mobile Kabaddi Scorer</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -209,7 +209,7 @@
 </head>
 <body>
     <header>
-        <h1>Dominating Boys</h1>
+        <h1>Mobile Kabaddi Scorer</h1>
     </header>
     <div class="container">
         <div class="scoreboard">
@@ -338,20 +338,26 @@
     }
 
     function createScoringButtons() {
-        const buttons = [
-            { team: 'team1', points: 1, label: 'Raid' },
-            { team: 'team2', points: 1, label: 'Raid' },
-            { team: 'team1', points: 1, label: 'Tackle' },
-            { team: 'team2', points: 1, label: 'Tackle' },
-            { team: 'team1', points: 1, label: 'Bonus' },
-            { team: 'team2', points: 1, label: 'Bonus' },
-            { team: 'team1', points: 2, label: 'Super Raid' },
-            { team: 'team2', points: 2, label: 'Super Raid' },
-            { team: 'team1', points: 2, label: 'Supar Tackle' },
-            { team: 'team2', points: 2, label: 'Super Tackle' },
-            { team: 'team1', points: 1, label: 'All Out' },
-            { team: 'team2', points: 1, label: 'All Out' },
-        ];
+    const buttons = [
+        
+        { team: 'team1', points: 1, label: 'Raid' },
+        { team: 'team2', points: 1, label: 'Raid' },
+        { team: 'team1', points: 2, label: 'Raid+2'},
+        { team:'team2',  points: 2, label: 'Raid+2'},
+        { team: 'team1', points: 1, label: 'Bonus' },
+        { team: 'team2', points: 1, label: 'Bonus' },
+        { team: 'team1', points: 3, label: 'Super Raid' },
+        { team: 'team2', points: 3, label: 'Super Raid' },
+        { team: 'team1', points: 1, label: 'Tackel' },  // Updated points to 3 for Super Raid
+        { team: 'team2', points: 1, label: 'Tackel' },
+        { team: 'team1', points: 2, label: 'Super Tackle' },
+        { team: 'team2', points: 2, label: 'Super Tackle' },
+        { team: 'team1', points: 2, label: 'All Out' },
+        { team: 'team2', points: 2, label: 'All Out' },
+    ];
+
+
+
 
         scoringButtonsContainer.innerHTML = '';
 
